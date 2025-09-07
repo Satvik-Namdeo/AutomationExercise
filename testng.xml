@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Registration Test">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://automationexercise.com/"/>
+    <classes>
+      <class name="com.TestRunner.RegistrationRunner"/>
+    </classes>
+  </test>
+  
+    <test name="Login Test">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://automationexercise.com/"/>
+    <classes>
+      <class name="com.TestRunner.LoginRunner"/>
+    </classes>
+  </test> 
+  
+  <test name="Logout Test">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://automationexercise.com/"/>
+    <classes>
+      <class name="com.TestRunner.LogoutRunner"/>
+    </classes>
+  </test> 
+  
+  <test name="Existing Registration Test">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://automationexercise.com/"/>
+    <classes>
+      <class name="com.tests.ExistingRegistrationTest"/>
+    </classes>
+  </test> 
+  
+  <test name="Contact Us Form Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.ContactUsFormTest"/>
+        </classes>
+    </test> 
+    
+    <test name="Verify Test Case Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.VerifyTestCaseTest"/>
+        </classes>
+    </test> 
+    
+    <test name="Verify All Products Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.VerifyAllProductsTest"/>
+        </classes>
+    </test> 
+    
+    <test name="Search Products Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.SearchProductsTest"/>
+        </classes>
+    </test> 
+    
+    <test name="Subscription Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.SubscriptionTest"/>
+        </classes>
+    </test>
+  
+  <test name="Subscription Cart Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.SubscriptionCartTest"/>
+        </classes>
+    </test> 
+    
+    <test name="Add To Cart Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.AddToCartTest"/>
+        </classes>
+    </test> 
+    
+    <test name="Increase Quantity Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.IncreasedQuantityTest"/>
+        </classes>
+    </test> 
+    
+    <test name="Registration while checkout Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.RegistrationWhileCheckoutTest"/>
+        </classes>
+    </test> 
+    
+    <test name="Registration Before checkout Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="http://automationexercise.com"/>
+        <classes>
+            <class name="com.tests.RegistrationBeforeCheckoutTest"/>
+        </classes>
+    </test> 
+  
+
+    
+    
+
+</suite> <!-- Suite -->
