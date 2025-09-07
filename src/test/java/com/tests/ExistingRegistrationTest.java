@@ -24,7 +24,7 @@ public class ExistingRegistrationTest extends TestNGBase {
 
 	@Test(priority = 2)
 	public void clickSignupAndVerifyNewUserSignup() {
-		registrationPage = new ExistingRegistrationPage(driver); // Initialize here
+		registrationPage = new ExistingRegistrationPage(driver);
 		registrationPage.clickSignup();
 		Assert.assertTrue(registrationPage.isNewUserSignupVisible(), "'New User Signup!' is not visible");
 	}
@@ -32,7 +32,7 @@ public class ExistingRegistrationTest extends TestNGBase {
 	@Test(priority = 3)
 	public void registerWithExistingEmailAndVerifyError() {
 		registrationPage.setUsername("red");
-		registrationPage.setEmail("red@gmail.com"); // Replace with a real registered email
+		registrationPage.setEmail("red@gmail.com");
 		registrationPage.clickSignin();
 		Assert.assertTrue(registrationPage.isEmailExistErrorVisible(),
 				"'Email Address already exist!' error not visible");

@@ -3,9 +3,9 @@ Feature: Registration
 @register
   Scenario Outline: User Registration to Sign-Up Page
     Given User is on the Home page
-    And User clicks on the Sign-Up/Login button
+    And User clicks on the Sign-Up and Login button
     Then User is redirected to the Sign-Up page
-    When User fills in the signup details "<name>" and "<email>"
+    When User fills in the signup details "<username>" and "<email>"
     And User clicks the Sign-Up button
     Then User is redirected to the account information page
     When User enters the following details "<days>", "<months>" ,"<years>", "<password>", "<firstname>", "<lastname>", "<address>", "<country>", "<state>", "<city>", "<zipcode>", and "<mobileNumber>"
@@ -19,5 +19,5 @@ Feature: Registration
     And user clicks continue button
 
     Examples: 
-      | username | email             | days | months | years | password | firstname | lastname | address     | country | state  | city         | zipcode | mobileNumber |
-      | rahul    | roha0000@gmail.com |   15 | May    |  2000 | anu123   | Dummy     | Dog      | 123 Main St | India   | Odisha | Bhubaneshwar |   90001 |   1234567890 |
+      | username | email                   | days | months | years | password  | firstname | lastname | address     | country | state          | city   | zipcode | mobileNumber |
+      | satvik   | namdeosat007@gmail.com  | 28   | July   | 2002  | satvik123 | satvik    | namdeo   | 123 Main St | India   | Madhya Pradesh | Bhopal |   10001 |   1234567890 |

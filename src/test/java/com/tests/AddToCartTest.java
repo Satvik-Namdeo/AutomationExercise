@@ -19,7 +19,7 @@ public class AddToCartTest extends TestNGBase {
     public void verifyHomePageIsVisible() {
         String actualTitle = driver.getTitle();
         Assert.assertTrue(actualTitle.contains("Automation Exercise"),
-                "❌ Home page is not visible successfully!");
+                "Home page is not visible successfully!");
     }
 
     @Test(priority = 2)
@@ -41,8 +41,8 @@ public class AddToCartTest extends TestNGBase {
         addToCartPage.clickViewCart();
 
         // Step 9: Verify both products added
-        Assert.assertEquals(addToCartPage.getFirstProductName(), "Blue Top", "❌ First product mismatch!");
-        Assert.assertEquals(addToCartPage.getSecondProductName(), "Men Tshirt", "❌ Second product mismatch!");
+        Assert.assertEquals(addToCartPage.getFirstProductName(), "Blue Top", "First product mismatch!");
+        Assert.assertEquals(addToCartPage.getSecondProductName(), "Men Tshirt", "Second product mismatch!");
 
         // Step 10: Verify prices, quantity, and totals
         Assert.assertEquals(addToCartPage.getFirstProductPrice(), "Rs. 500");

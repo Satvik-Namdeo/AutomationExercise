@@ -2,7 +2,7 @@ Feature: Login Page with credentials
 
   Background: 
     Given User is in home page
-    When user clicks on signup/login button
+    When user clicks on signup and login button
     Then user is redirected to login page
 
   @Valid

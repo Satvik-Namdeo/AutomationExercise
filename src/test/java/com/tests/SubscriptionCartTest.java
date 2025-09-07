@@ -12,7 +12,6 @@ public class SubscriptionCartTest extends TestNGBase {
 
     @BeforeClass(alwaysRun = true)
     public void initPageObjects() {
-        // Initialize Page Object using driver from TestNGBase
         subscriptionCartPage = new SubscriptionCartPage(driver);
     }
 
@@ -20,7 +19,7 @@ public class SubscriptionCartTest extends TestNGBase {
     public void verifyHomePageIsVisible() {
         String actualTitle = driver.getTitle();
         Assert.assertTrue(actualTitle.contains("Automation Exercise"),
-                "❌ Home page is not visible successfully!");
+                "Home page is not visible successfully!");
     }
 
     @Test(priority = 2)
@@ -33,7 +32,7 @@ public class SubscriptionCartTest extends TestNGBase {
 
         // Step 6: Verify text 'SUBSCRIPTION'
         Assert.assertTrue(subscriptionCartPage.isSubscriptionHeadingVisible(),
-                "❌ 'SUBSCRIPTION' heading not visible!");
+                "'SUBSCRIPTION' heading not visible!");
 
         // Step 7: Enter email and click arrow
         subscriptionCartPage.setEmail("testemail" + System.currentTimeMillis() + "@gmail.com");
@@ -42,6 +41,6 @@ public class SubscriptionCartTest extends TestNGBase {
         // Step 8: Verify success message
         String successMsg = subscriptionCartPage.getSuccessMessage();
         Assert.assertEquals(successMsg.trim(), "You have been successfully subscribed!",
-                "❌ Subscription success message not matched!");
+                "Subscription success message not matched!");
     }
 }

@@ -26,7 +26,7 @@ public class LogoutStepDefinitons {
         Assert.assertTrue(title.contains("Automation Exercise"), "Home page title mismatch!");
     }
 
-    @When("User clicked on signup\\/login button")
+    @When("User clicked on signup and login button")
     public void user_clicked_on_signup_login_button() {
         log.clickSignUp();
         Assert.assertTrue(driver.getCurrentUrl().contains("login"),

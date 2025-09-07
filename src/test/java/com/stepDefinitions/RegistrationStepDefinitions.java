@@ -26,7 +26,7 @@ public class RegistrationStepDefinitions {
                 "Home page title did not match!");
     }
 
-    @Given("User clicks on the Sign-Up\\/Login button")
+    @Given("User clicks on the Sign-Up and Login button")
     public void user_clicks_on_the_sign_up_login_button() {
         registration.clickSignUp();
         Assert.assertTrue(registration.isNewUserSignupVisible(),

@@ -34,7 +34,7 @@ public class LoginStepDefinitions {
                 "Home page title did not match");
     }
 
-    @When("user clicks on signup\\/login button")
+    @When("user clicks on signup and login button")
     public void user_clicks_on_signup_login_button() {
         validLogin.clickSignUp();
         Assert.assertTrue(validLogin.isLoginPageVisible(), "Login page not visible!");
