@@ -9,7 +9,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo 'Cloning repository...'
-                git branch: 'main', url: 'https://github.com/Satvik-Namdeo/AutomationExercise.git'
+                git branch: 'master', url: 'https://github.com/Satvik-Namdeo/AutomationExercise.git'
             }
         }
 
