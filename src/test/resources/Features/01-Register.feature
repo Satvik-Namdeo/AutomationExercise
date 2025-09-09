@@ -20,4 +20,4 @@ Feature: Registration
 
     Examples: 
       | username | email                   | days | months | years | password  | firstname | lastname | address     | country | state          | city   | zipcode | mobileNumber |
-      | satvik   | namdeosat007@gmail.com  | 28   | July   | 2002  | satvik123 | satvik    | namdeo   | 123 Main St | India   | Madhya Pradesh | Bhopal |   10001 |   1234567890 |
+      | satvik   | namdeosat@gmail.com     | 28   | July   | 2002  | satvik123 | satvik    | namdeo   | 123 Main St | India   | Madhya Pradesh | Bhopal |   10001 |   1234567890 |

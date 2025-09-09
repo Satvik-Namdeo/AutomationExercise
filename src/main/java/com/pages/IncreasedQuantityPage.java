@@ -14,7 +14,6 @@ public class IncreasedQuantityPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    // ---------------- PRODUCT PAGE LOCATORS ---------------- //
 
     @FindBy(xpath = "//a[contains(text(),'View Product')]")
     WebElement viewProductLink;
@@ -28,12 +27,10 @@ public class IncreasedQuantityPage extends BasePage {
     @FindBy(xpath = "//u[normalize-space()='View Cart']")
     WebElement viewCartLink;
 
-    // ---------------- CART PAGE LOCATORS ---------------- //
 
     @FindBy(xpath = "//tr[contains(@id,'product')][1]//td[@class='cart_quantity']/button")
     WebElement cartQuantityBtn;
 
-    // ---------------- PRODUCT PAGE ACTIONS ---------------- //
 
     public void clickViewProduct() {
         viewProductLink.click();
@@ -52,7 +49,6 @@ public class IncreasedQuantityPage extends BasePage {
         viewCartLink.click();
     }
 
-    // ---------------- CART PAGE ACTIONS ---------------- //
 
     public String getCartQuantity() {
         return cartQuantityBtn.getText().trim();

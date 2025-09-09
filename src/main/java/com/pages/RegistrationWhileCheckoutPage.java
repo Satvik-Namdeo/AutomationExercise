@@ -21,7 +21,6 @@ public class RegistrationWhileCheckoutPage extends BasePage {
         PageFactory.initElements(webDriver, this);
     }
 
-    // ------------------- Product Selection -------------------
     @FindBy(xpath = "//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[1]//div[2]")
     WebElement hoverproductWebElement1;
 
@@ -37,7 +36,6 @@ public class RegistrationWhileCheckoutPage extends BasePage {
         Thread.sleep(2000);
     }
 
-    // ------------------- Cart & Checkout -------------------
     @FindBy(xpath = "//*[@id='cartModal']/div/div/div[2]/p[2]/a/u")
     WebElement viewcartWebElement;
 
@@ -52,7 +50,6 @@ public class RegistrationWhileCheckoutPage extends BasePage {
         proceedToCheckoutWebElement.click();
     }
     
- // Home page "Signup / Login"
     @FindBy(xpath = "//a[normalize-space()='Signup / Login']")
     WebElement signupLoginHeader;
     
